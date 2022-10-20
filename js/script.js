@@ -33,4 +33,14 @@ const teamArray = [{
     foto: "barbara-ramos-graphic-designer.jpg"
 }]
 
-console.log(teamArray);
+// console.log(teamArray);
+
+const teamMemebersRow = document.getElementById("team-members-row")
+// console.log(teamMemebersRow);
+
+for (let i = 0; i < teamArray.length; i++) {
+    const thisMember = teamArray[i];
+    teamMemebersRow.innerHTML += `<li>${thisMember.nome}, ${thisMember.ruolo} ${thisMember.foto}</li>`;
+    
+}
+
